@@ -4,7 +4,7 @@ version: 1.0.{build}
 image: Visual Studio 2022
 
 environment:
-  nodejs_version: "20"
+  nodejs_version: "24.19.0"
 
 install:
   - ps: Install-Product node $env:nodejs_version
