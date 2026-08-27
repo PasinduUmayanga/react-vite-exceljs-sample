@@ -1,6 +1,9 @@
 # ExcelJS Learning Lab
 
 [![Last commit](https://img.shields.io/github/last-commit/PasinduUmayanga/react-vite-exceljs-sample)](https://github.com/PasinduUmayanga/react-vite-exceljs-sample/commits/main)
+[![Build status](https://ci.appveyor.com/api/projects/status/17uy8a50u77cv2u7/branch/main?svg=true)](https://ci.appveyor.com/project/Mahadenamuththa/react-vite-exceljs-sample/branch/main)
+[![Build History](https://img.shields.io/badge/AppVeyor-Build%20History-blue?logo=appveyor)](https://ci.appveyor.com/project/Mahadenamuththa/react-vite-exceljs-sample/history)
+[![Security scan](https://github.com/PasinduUmayanga/react-vite-exceljs-sample/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/PasinduUmayanga/react-vite-exceljs-sample/actions/workflows/security.yml)
 ![npm](https://img.shields.io/badge/npm-package%20manager-CB3837?logo=npm&logoColor=white)
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
@@ -159,6 +162,18 @@ const blob = new Blob([buffer], {
 ```
 
 Native Excel chart generation is not part of the documented ExcelJS API. The application therefore uses Recharts for live browser charts and exports the source data to Excel tables for further analysis.
+
+## Dependency security
+
+Dependabot checks npm packages and GitHub Actions dependencies every week and opens update pull requests when newer versions are available. The GitHub **Security scan** workflow runs on pull requests, pushes to `main`, and every Monday. It installs the locked dependency tree, runs `npm audit`, and reviews dependency changes introduced by pull requests.
+
+Run the same dependency audit locally with:
+
+```bash
+npm audit --audit-level=high
+```
+
+After this repository is connected to GitHub Actions, enable the dependency graph, Dependabot alerts, and Dependabot security updates in the repository's Security settings.
 
 ## Application structure
 
