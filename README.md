@@ -65,6 +65,39 @@ npm run lint
 npm run build
 ```
 
+## Installed npm packages
+
+This is a React and Node.js project, so it uses **npm packages**, not NuGet packages. Run the following command once after cloning to install every dependency listed in `package.json`:
+
+```bash
+npm install
+```
+
+`package-lock.json` records the exact resolved package versions so installs remain consistent across machines.
+
+### Application packages
+
+| Package | Version | Used for |
+| --- | --- | --- |
+| `react` | 18.3 | Building the application interface. |
+| `react-dom` | 18.3 | Rendering React into the browser DOM. |
+| `react-router-dom` | 6.28 | Navigating tutorial lessons and the reporting page. |
+| `exceljs` | 4.4 | Creating, styling, and downloading `.xlsx` workbooks. |
+| `recharts` | 2.15 | Rendering interactive reporting charts in the browser. |
+
+### Development packages
+
+| Package | Used for |
+| --- | --- |
+| `vite` | Local development server and production builds. |
+| `typescript` | Static type checking. |
+| `@vitejs/plugin-react` | React support in Vite. |
+| `eslint` and `@eslint/js` | JavaScript and TypeScript linting. |
+| `typescript-eslint` | TypeScript support for ESLint. |
+| `eslint-plugin-react-hooks` | React Hooks lint rules. |
+| `eslint-plugin-react-refresh` | Fast Refresh lint rules. |
+| `@types/react` and `@types/react-dom` | TypeScript definitions for React. |
+
 ## Project configuration
 
 This project is ready to run after `npm install`; it does not require API keys, environment variables, a backend, or a database.
