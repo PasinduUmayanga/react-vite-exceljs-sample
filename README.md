@@ -22,7 +22,7 @@ A Vite + React tutorial application for learning how to generate Excel reports i
 - styling cells, dates, currencies, frozen headers, and table filters
 - creating advanced Excel tables from API data
 - downloading one workbook per user and a complete multi-sheet report
-- displaying report data as React charts with Recharts
+- displaying report data as React charts with Recharts and exporting a chart-ready Excel report
 
 ## Prerequisites
 
@@ -145,7 +145,7 @@ Edit `src/features/reporting/excel.ts` to change:
 The Reporting project has two export paths:
 
 - **Download `.xlsx`** on a user row creates one profile workbook.
-- **Download all users `.xlsx`** creates a summary worksheet and a formatted users table.
+- **Download all users `.xlsx`** creates summary, users, and chart-data worksheets. The chart-data worksheet includes an embedded PNG bar chart built from mock users and the source table for creating an editable Excel chart.
 
 ## ExcelJS in the browser
 
@@ -162,7 +162,7 @@ const blob = new Blob([buffer], {
 })
 ```
 
-Native Excel chart generation is not part of the documented ExcelJS API. The application therefore uses Recharts for live browser charts and exports the source data to Excel tables for further analysis.
+Native Excel chart generation is not part of the documented ExcelJS API. The application therefore uses Recharts for live browser charts, embeds a rendered PNG chart in the complete Excel export, and includes the source data for users who want to create an editable Excel chart.
 
 ## Application structure
 
