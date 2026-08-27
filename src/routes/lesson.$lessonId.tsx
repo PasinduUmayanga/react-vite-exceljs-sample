@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createFileRoute, redirect } from '@tanstack/react-router'
 import { lessons } from '../features/lessons/lessonContent'
 import { LessonPage } from '../pages/LessonPage'

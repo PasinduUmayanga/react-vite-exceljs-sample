@@ -5,12 +5,12 @@
 [![Web on Vercel](https://img.shields.io/badge/Vercel-Web-000000?logo=vercel)](https://react-vite-exceljs-sample.vercel.app/)
 ![Node.js](https://img.shields.io/badge/Node.js-24.19.0-339933?logo=node.js&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-package%20manager-CB3837?logo=npm&logoColor=white)
-![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript&logoColor=white)
 ![ExcelJS](https://img.shields.io/badge/ExcelJS-4.4-217346?logo=microsoft-excel&logoColor=white)
 ![TanStack Router](https://img.shields.io/badge/TanStack%20Router-1-FF4154?logo=tanstack&logoColor=white)
-![Recharts](https://img.shields.io/badge/Recharts-2-0F766E)
+![Recharts](https://img.shields.io/badge/Recharts-3.10-0F766E)
 [![Last commit](https://img.shields.io/github/last-commit/PasinduUmayanga/react-vite-exceljs-sample)](https://github.com/PasinduUmayanga/react-vite-exceljs-sample/commits/main)
 
 A Vite + React tutorial application for learning how to generate Excel reports in the browser with [ExcelJS](https://github.com/exceljs/exceljs). Follow the menu steps, download a workbook after each exercise, then use the Reporting project to export real mock-data reports.
@@ -83,27 +83,28 @@ npm install
 
 | Package | Version | Used for |
 | --- | --- | --- |
-| `react` | 18.3.1 | Building the application interface. |
-| `react-dom` | 18.3.1 | Rendering React into the browser DOM. |
+| `react` | 19.2.8 | Building the application interface. |
+| `react-dom` | 19.2.8 | Rendering React into the browser DOM. |
 | `@tanstack/react-router` | 1.170.32 | Type-safe file-based navigation for tutorial lessons and the reporting page. |
 | `exceljs` | 4.4.0 | Creating, styling, and downloading `.xlsx` workbooks. |
-| `recharts` | 2.15.0 | Rendering interactive reporting charts in the browser. |
+| `recharts` | 3.10.1 | Rendering interactive reporting charts in the browser. |
 
 ### Development packages
 
 | Package | Version | Used for |
 | --- | --- | --- |
-| `vite` | 6.0.5 | Local development server and production builds. |
-| `typescript` | 5.6.3 | Static type checking. |
-| `@vitejs/plugin-react` | 4.3.4 | React support in Vite. |
+| `vite` | 8.2.2 | Local development server and production builds. |
+| `@typescript/native` | 7.0.2 | TypeScript 7 compiler used by the build. |
+| `typescript` | 6.0 | Compatibility compiler API used by ESLint until TypeScript 7 exposes its stable tooling API. |
+| `@vitejs/plugin-react` | 6.1.0 | React support in Vite. |
 | `@tanstack/router-plugin` | 1.168.35 | Generates the typed TanStack Router route tree during development and builds. |
-| `eslint` | 9.17.0 | Core JavaScript and TypeScript linting. |
-| `@eslint/js` | 9.17.0 | ESLint's recommended JavaScript rule set. |
-| `typescript-eslint` | 8.18.0 | TypeScript support for ESLint. |
-| `eslint-plugin-react-hooks` | 5.0.0 | React Hooks lint rules. |
-| `eslint-plugin-react-refresh` | 0.4.16 | Fast Refresh lint rules. |
-| `@types/react` | 18.3.18 | TypeScript definitions for React. |
-| `@types/react-dom` | 18.3.5 | TypeScript definitions for React DOM. |
+| `eslint` | 10.9.1 | Core JavaScript and TypeScript linting. |
+| `@eslint/js` | 10.0.1 | ESLint's recommended JavaScript rule set. |
+| `typescript-eslint` | 8.68.0 | TypeScript support for ESLint. |
+| `eslint-plugin-react-hooks` | 7.1.1 | React Hooks lint rules. |
+| `eslint-plugin-react-refresh` | 0.5.5 | Fast Refresh lint rules. |
+| `@types/react` | 19.2.18 | TypeScript definitions for React. |
+| `@types/react-dom` | 19.2.5 | TypeScript definitions for React DOM. |
 
 ## Project configuration
 
