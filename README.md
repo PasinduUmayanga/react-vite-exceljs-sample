@@ -6,7 +6,7 @@
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)
 ![ExcelJS](https://img.shields.io/badge/ExcelJS-4.4-217346?logo=microsoft-excel&logoColor=white)
-![React Router](https://img.shields.io/badge/React%20Router-6-CA4245?logo=reactrouter&logoColor=white)
+![TanStack Router](https://img.shields.io/badge/TanStack%20Router-1-FF4154?logo=tanstack&logoColor=white)
 ![Recharts](https://img.shields.io/badge/Recharts-2-0F766E)
 
 A Vite + React tutorial application for learning how to generate Excel reports in the browser with [ExcelJS](https://github.com/exceljs/exceljs). Follow the menu steps, download a workbook after each exercise, then use the Reporting project to export real mock-data reports.
@@ -79,24 +79,27 @@ npm install
 
 | Package | Version | Used for |
 | --- | --- | --- |
-| `react` | 18.3 | Building the application interface. |
-| `react-dom` | 18.3 | Rendering React into the browser DOM. |
-| `react-router-dom` | 6.28 | Navigating tutorial lessons and the reporting page. |
-| `exceljs` | 4.4 | Creating, styling, and downloading `.xlsx` workbooks. |
-| `recharts` | 2.15 | Rendering interactive reporting charts in the browser. |
+| `react` | 18.3.1 | Building the application interface. |
+| `react-dom` | 18.3.1 | Rendering React into the browser DOM. |
+| `@tanstack/react-router` | 1.170.32 | Type-safe file-based navigation for tutorial lessons and the reporting page. |
+| `exceljs` | 4.4.0 | Creating, styling, and downloading `.xlsx` workbooks. |
+| `recharts` | 2.15.0 | Rendering interactive reporting charts in the browser. |
 
 ### Development packages
 
-| Package | Used for |
-| --- | --- |
-| `vite` | Local development server and production builds. |
-| `typescript` | Static type checking. |
-| `@vitejs/plugin-react` | React support in Vite. |
-| `eslint` and `@eslint/js` | JavaScript and TypeScript linting. |
-| `typescript-eslint` | TypeScript support for ESLint. |
-| `eslint-plugin-react-hooks` | React Hooks lint rules. |
-| `eslint-plugin-react-refresh` | Fast Refresh lint rules. |
-| `@types/react` and `@types/react-dom` | TypeScript definitions for React. |
+| Package | Version | Used for |
+| --- | --- | --- |
+| `vite` | 6.0.5 | Local development server and production builds. |
+| `typescript` | 5.6.3 | Static type checking. |
+| `@vitejs/plugin-react` | 4.3.4 | React support in Vite. |
+| `@tanstack/router-plugin` | 1.168.35 | Generates the typed TanStack Router route tree during development and builds. |
+| `eslint` | 9.17.0 | Core JavaScript and TypeScript linting. |
+| `@eslint/js` | 9.17.0 | ESLint's recommended JavaScript rule set. |
+| `typescript-eslint` | 8.18.0 | TypeScript support for ESLint. |
+| `eslint-plugin-react-hooks` | 5.0.0 | React Hooks lint rules. |
+| `eslint-plugin-react-refresh` | 0.4.16 | Fast Refresh lint rules. |
+| `@types/react` | 18.3.18 | TypeScript definitions for React. |
+| `@types/react-dom` | 18.3.5 | TypeScript definitions for React DOM. |
 
 ## Project configuration
 
@@ -108,7 +111,8 @@ This project is ready to run after `npm install`; it does not require API keys, 
 | --- | --- |
 | `package.json` | Dependencies and npm commands. |
 | `vite.config.ts` | Vite and React build configuration. |
-| `src/app/App.tsx` | Browser routes for lessons and the reporting project. |
+| `src/routes/` | File-based browser routes for lessons and the reporting project. |
+| `src/router.tsx` | Typed TanStack Router instance and router configuration. |
 | `src/features/lessons/lessonContent.ts` | Tutorial step titles, explanations, and code samples. |
 | `src/features/reporting/api.ts` | The mock users API endpoint. |
 | `src/features/reporting/excel.ts` | ExcelJS workbook layouts and download filenames. |
@@ -170,6 +174,8 @@ src/
 │  ├─ lessons/          Tutorial content
 │  └─ reporting/        API, types, ExcelJS exports, and report logic
 ├─ pages/               Lesson and reporting pages
+├─ routes/               File-based TanStack Router route modules
+├─ router.tsx            Router instance and type registration
 └─ styles/              Global responsive styles
 ```
 
