@@ -7,7 +7,9 @@ environment:
   nodejs_version: "24.19.0"
 
 install:
-  - ps: Install-Product node $env:nodejs_version
+  # Node.js 24 does not publish a 32-bit Windows build. Download the exact x64 runtime
+  # instead of AppVeyor's default x86 Install-Product selection.
+  - ps: Update-NodeJsInstallation $env:nodejs_version x64
   - node --version
   - npm --version
   - npm ci
