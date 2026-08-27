@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/17uy8a50u77cv2u7/branch/main?svg=true)](https://ci.appveyor.com/project/Mahadenamuththa/react-vite-exceljs-sample/branch/main)
 [![Build History](https://img.shields.io/badge/AppVeyor-Build%20History-blue?logo=appveyor)](https://ci.appveyor.com/project/Mahadenamuththa/react-vite-exceljs-sample/history)
 [![Web on Vercel](https://img.shields.io/badge/Vercel-Web-000000?logo=vercel)](https://react-vite-exceljs-sample.vercel.app/)
-![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-24.19.0-339933?logo=node.js&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-package%20manager-CB3837?logo=npm&logoColor=white)
 ![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
@@ -26,7 +26,7 @@ A Vite + React tutorial application for learning how to generate Excel reports i
 
 ## Prerequisites
 
-Install a current Node.js LTS release (Node.js 20 or later is recommended), which includes npm.
+Install Node.js `24.19.0`, which includes npm. This version is pinned for local development and AppVeyor CI.
 
 Verify the tools are available:
 
